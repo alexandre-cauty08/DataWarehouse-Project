@@ -1,0 +1,7 @@
+INSERT INTO district VALUES (0, '34000','Montpellier', 'HOPITAUX-FACULTES','1800','15000');
+INSERT INTO district VALUES (1, '34010','Montpellier', 'MOSSON','1200','30000');
+INSERT INTO district VALUES (2, '34020','Montpellier', 'LES CEVENNES','1250','30000');
+INSERT INTO district VALUES (3, '34030','Montpellier', 'PORT MARIANNE','2000','10000');
+INSERT INTO district VALUES (4, '34040','Montpellier', 'MONTPELLIER CENTRE','2200','8000');
+INSERT INTO district VALUES (5, '34050','Montpellier', 'CROIX D ARGENT','1500','30000');
+INSERT INTO district VALUES (6, '34060','Montpellier', 'PRES D ARENE','1700','25000');
