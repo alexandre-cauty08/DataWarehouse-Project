@@ -1,0 +1,1825 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=US-ASCII">
+<meta name="generator" content="SQL*Plus 19.3.0">
+<style type='text/css'> body {font:10pt Arial,Helvetica,sans-serif; color:black; background:White;} p {font:10pt Arial,Helvetica,sans-serif; color:black; background:White;} table,tr,td {font:10pt Arial,Helvetica,sans-serif; color:Black; background:#f7f7e7; padding:0px 0px 0px 0px; margin:0px 0px 0px 0px;} th {font:bold 10pt Arial,Helvetica,sans-serif; color:#336699; background:#cccc99; padding:0px 0px 0px 0px;} h1 {font:16pt Arial,Helvetica,Geneva,sans-serif; color:#336699; background-color:White; border-bottom:1px solid #cccc99; margin-top:0pt; margin-bottom:0pt; padding:0px 0px 0px 0px;-
+} h2 {font:bold 10pt Arial,Helvetica,Geneva,sans-serif; color:#336699; background-color:White; margin-top:4pt; margin-bottom:0pt;} a {font:9pt Arial,Helvetica,sans-serif; color:#663300; background:#ffffff; margin-top:0pt; margin-bottom:0pt; vertical-align:top;}</style><title>SQL*Plus Report</title>
+</head>
+<body>
+SQL&gt; SET pagesize 0
+<br>
+SQL&gt; SET linesize 500
+<br>
+SQL&gt; SELECT ride_date.dayOfWeek,dep_district.city , dep_district.districtName , count(ride.idDistrictDep)
+<br>
+  2  FROM ride , dep_district, ride_date
+<br>
+  3     WHERE ride.idDistrictDep = dep_district.idDistrict
+<br>
+  4  GROUP BY CUBE( ride_date.dayOfWeek,dep_district.city , dep_district.districtName);
+<br>
+<p>
+<table border='1' width='90%' align='center' summary='Script output'>
+<tr>
+<td>
+&nbsp;
+</td>
+<td>
+&nbsp;
+</td>
+<td>
+&nbsp;
+</td>
+<td align="right">
+    546398
+</td>
+</tr>
+<tr>
+<td>
+&nbsp;
+</td>
+<td>
+&nbsp;
+</td>
+<td>
+MOSSON
+</td>
+<td align="right">
+     74672
+</td>
+</tr>
+<tr>
+<td>
+&nbsp;
+</td>
+<td>
+&nbsp;
+</td>
+<td>
+LES CEVENNES
+</td>
+<td align="right">
+     77185
+</td>
+</tr>
+<tr>
+<td>
+&nbsp;
+</td>
+<td>
+&nbsp;
+</td>
+<td>
+PRES D ARENE
+</td>
+<td align="right">
+     71441
+</td>
+</tr>
+<tr>
+<td>
+&nbsp;
+</td>
+<td>
+&nbsp;
+</td>
+<td>
+PORT MARIANNE
+</td>
+<td align="right">
+     77544
+</td>
+</tr>
+<tr>
+<td>
+&nbsp;
+</td>
+<td>
+&nbsp;
+</td>
+<td>
+CROIX D ARGENT
+</td>
+<td align="right">
+     77544
+</td>
+</tr>
+<tr>
+<td>
+&nbsp;
+</td>
+<td>
+&nbsp;
+</td>
+<td>
+HOPITAUX-FACULTES
+</td>
+<td align="right">
+     85083
+</td>
+</tr>
+<tr>
+<td>
+&nbsp;
+</td>
+<td>
+&nbsp;
+</td>
+<td>
+MONTPELLIER CENTRE
+</td>
+<td align="right">
+     82929
+</td>
+</tr>
+<tr>
+<td>
+&nbsp;
+</td>
+<td>
+Montpellier
+</td>
+<td>
+&nbsp;
+</td>
+<td align="right">
+    546398
+</td>
+</tr>
+<tr>
+<td>
+&nbsp;
+</td>
+<td>
+Montpellier
+</td>
+<td>
+MOSSON
+</td>
+<td align="right">
+     74672
+</td>
+</tr>
+<tr>
+<td>
+&nbsp;
+</td>
+<td>
+Montpellier
+</td>
+<td>
+LES CEVENNES
+</td>
+<td align="right">
+     77185
+</td>
+</tr>
+<tr>
+<td>
+&nbsp;
+</td>
+<td>
+Montpellier
+</td>
+<td>
+PRES D ARENE
+</td>
+<td align="right">
+     71441
+</td>
+</tr>
+<tr>
+<td>
+&nbsp;
+</td>
+<td>
+Montpellier
+</td>
+<td>
+PORT MARIANNE
+</td>
+<td align="right">
+     77544
+</td>
+</tr>
+<tr>
+<td>
+&nbsp;
+</td>
+<td>
+Montpellier
+</td>
+<td>
+CROIX D ARGENT
+</td>
+<td align="right">
+     77544
+</td>
+</tr>
+<tr>
+<td>
+&nbsp;
+</td>
+<td>
+Montpellier
+</td>
+<td>
+HOPITAUX-FACULTES
+</td>
+<td align="right">
+     85083
+</td>
+</tr>
+<tr>
+<td>
+&nbsp;
+</td>
+<td>
+Montpellier
+</td>
+<td>
+MONTPELLIER CENTRE
+</td>
+<td align="right">
+     82929
+</td>
+</tr>
+<tr>
+<td>
+Jeudi
+</td>
+<td>
+&nbsp;
+</td>
+<td>
+&nbsp;
+</td>
+<td align="right">
+     76100
+</td>
+</tr>
+<tr>
+<td>
+Jeudi
+</td>
+<td>
+&nbsp;
+</td>
+<td>
+MOSSON
+</td>
+<td align="right">
+     10400
+</td>
+</tr>
+<tr>
+<td>
+Jeudi
+</td>
+<td>
+&nbsp;
+</td>
+<td>
+LES CEVENNES
+</td>
+<td align="right">
+     10750
+</td>
+</tr>
+<tr>
+<td>
+Jeudi
+</td>
+<td>
+&nbsp;
+</td>
+<td>
+PRES D ARENE
+</td>
+<td align="right">
+      9950
+</td>
+</tr>
+<tr>
+<td>
+Jeudi
+</td>
+<td>
+&nbsp;
+</td>
+<td>
+PORT MARIANNE
+</td>
+<td align="right">
+     10800
+</td>
+</tr>
+<tr>
+<td>
+Jeudi
+</td>
+<td>
+&nbsp;
+</td>
+<td>
+CROIX D ARGENT
+</td>
+<td align="right">
+     10800
+</td>
+</tr>
+<tr>
+<td>
+Jeudi
+</td>
+<td>
+&nbsp;
+</td>
+<td>
+HOPITAUX-FACULTES
+</td>
+<td align="right">
+     11850
+</td>
+</tr>
+<tr>
+<td>
+Jeudi
+</td>
+<td>
+&nbsp;
+</td>
+<td>
+MONTPELLIER CENTRE
+</td>
+<td align="right">
+     11550
+</td>
+</tr>
+<tr>
+<td>
+Jeudi
+</td>
+<td>
+Montpellier
+</td>
+<td>
+&nbsp;
+</td>
+<td align="right">
+     76100
+</td>
+</tr>
+<tr>
+<td>
+Jeudi
+</td>
+<td>
+Montpellier
+</td>
+<td>
+MOSSON
+</td>
+<td align="right">
+     10400
+</td>
+</tr>
+<tr>
+<td>
+Jeudi
+</td>
+<td>
+Montpellier
+</td>
+<td>
+LES CEVENNES
+</td>
+<td align="right">
+     10750
+</td>
+</tr>
+<tr>
+<td>
+Jeudi
+</td>
+<td>
+Montpellier
+</td>
+<td>
+PRES D ARENE
+</td>
+<td align="right">
+      9950
+</td>
+</tr>
+<tr>
+<td>
+Jeudi
+</td>
+<td>
+Montpellier
+</td>
+<td>
+PORT MARIANNE
+</td>
+<td align="right">
+     10800
+</td>
+</tr>
+<tr>
+<td>
+Jeudi
+</td>
+<td>
+Montpellier
+</td>
+<td>
+CROIX D ARGENT
+</td>
+<td align="right">
+     10800
+</td>
+</tr>
+<tr>
+<td>
+Jeudi
+</td>
+<td>
+Montpellier
+</td>
+<td>
+HOPITAUX-FACULTES
+</td>
+<td align="right">
+     11850
+</td>
+</tr>
+<tr>
+<td>
+Jeudi
+</td>
+<td>
+Montpellier
+</td>
+<td>
+MONTPELLIER CENTRE
+</td>
+<td align="right">
+     11550
+</td>
+</tr>
+<tr>
+<td>
+Lundi
+</td>
+<td>
+&nbsp;
+</td>
+<td>
+&nbsp;
+</td>
+<td align="right">
+     79144
+</td>
+</tr>
+<tr>
+<td>
+Lundi
+</td>
+<td>
+&nbsp;
+</td>
+<td>
+MOSSON
+</td>
+<td align="right">
+     10816
+</td>
+</tr>
+<tr>
+<td>
+Lundi
+</td>
+<td>
+&nbsp;
+</td>
+<td>
+LES CEVENNES
+</td>
+<td align="right">
+     11180
+</td>
+</tr>
+<tr>
+<td>
+Lundi
+</td>
+<td>
+&nbsp;
+</td>
+<td>
+PRES D ARENE
+</td>
+<td align="right">
+     10348
+</td>
+</tr>
+<tr>
+<td>
+Lundi
+</td>
+<td>
+&nbsp;
+</td>
+<td>
+PORT MARIANNE
+</td>
+<td align="right">
+     11232
+</td>
+</tr>
+<tr>
+<td>
+Lundi
+</td>
+<td>
+&nbsp;
+</td>
+<td>
+CROIX D ARGENT
+</td>
+<td align="right">
+     11232
+</td>
+</tr>
+<tr>
+<td>
+Lundi
+</td>
+<td>
+&nbsp;
+</td>
+<td>
+HOPITAUX-FACULTES
+</td>
+<td align="right">
+     12324
+</td>
+</tr>
+<tr>
+<td>
+Lundi
+</td>
+<td>
+&nbsp;
+</td>
+<td>
+MONTPELLIER CENTRE
+</td>
+<td align="right">
+     12012
+</td>
+</tr>
+<tr>
+<td>
+Lundi
+</td>
+<td>
+Montpellier
+</td>
+<td>
+&nbsp;
+</td>
+<td align="right">
+     79144
+</td>
+</tr>
+<tr>
+<td>
+Lundi
+</td>
+<td>
+Montpellier
+</td>
+<td>
+MOSSON
+</td>
+<td align="right">
+     10816
+</td>
+</tr>
+<tr>
+<td>
+Lundi
+</td>
+<td>
+Montpellier
+</td>
+<td>
+LES CEVENNES
+</td>
+<td align="right">
+     11180
+</td>
+</tr>
+<tr>
+<td>
+Lundi
+</td>
+<td>
+Montpellier
+</td>
+<td>
+PRES D ARENE
+</td>
+<td align="right">
+     10348
+</td>
+</tr>
+<tr>
+<td>
+Lundi
+</td>
+<td>
+Montpellier
+</td>
+<td>
+PORT MARIANNE
+</td>
+<td align="right">
+     11232
+</td>
+</tr>
+<tr>
+<td>
+Lundi
+</td>
+<td>
+Montpellier
+</td>
+<td>
+CROIX D ARGENT
+</td>
+<td align="right">
+     11232
+</td>
+</tr>
+<tr>
+<td>
+Lundi
+</td>
+<td>
+Montpellier
+</td>
+<td>
+HOPITAUX-FACULTES
+</td>
+<td align="right">
+     12324
+</td>
+</tr>
+<tr>
+<td>
+Lundi
+</td>
+<td>
+Montpellier
+</td>
+<td>
+MONTPELLIER CENTRE
+</td>
+<td align="right">
+     12012
+</td>
+</tr>
+<tr>
+<td>
+Mardi
+</td>
+<td>
+&nbsp;
+</td>
+<td>
+&nbsp;
+</td>
+<td align="right">
+     79144
+</td>
+</tr>
+<tr>
+<td>
+Mardi
+</td>
+<td>
+&nbsp;
+</td>
+<td>
+MOSSON
+</td>
+<td align="right">
+     10816
+</td>
+</tr>
+<tr>
+<td>
+Mardi
+</td>
+<td>
+&nbsp;
+</td>
+<td>
+LES CEVENNES
+</td>
+<td align="right">
+     11180
+</td>
+</tr>
+<tr>
+<td>
+Mardi
+</td>
+<td>
+&nbsp;
+</td>
+<td>
+PRES D ARENE
+</td>
+<td align="right">
+     10348
+</td>
+</tr>
+<tr>
+<td>
+Mardi
+</td>
+<td>
+&nbsp;
+</td>
+<td>
+PORT MARIANNE
+</td>
+<td align="right">
+     11232
+</td>
+</tr>
+<tr>
+<td>
+Mardi
+</td>
+<td>
+&nbsp;
+</td>
+<td>
+CROIX D ARGENT
+</td>
+<td align="right">
+     11232
+</td>
+</tr>
+<tr>
+<td>
+Mardi
+</td>
+<td>
+&nbsp;
+</td>
+<td>
+HOPITAUX-FACULTES
+</td>
+<td align="right">
+     12324
+</td>
+</tr>
+<tr>
+<td>
+Mardi
+</td>
+<td>
+&nbsp;
+</td>
+<td>
+MONTPELLIER CENTRE
+</td>
+<td align="right">
+     12012
+</td>
+</tr>
+<tr>
+<td>
+Mardi
+</td>
+<td>
+Montpellier
+</td>
+<td>
+&nbsp;
+</td>
+<td align="right">
+     79144
+</td>
+</tr>
+<tr>
+<td>
+Mardi
+</td>
+<td>
+Montpellier
+</td>
+<td>
+MOSSON
+</td>
+<td align="right">
+     10816
+</td>
+</tr>
+<tr>
+<td>
+Mardi
+</td>
+<td>
+Montpellier
+</td>
+<td>
+LES CEVENNES
+</td>
+<td align="right">
+     11180
+</td>
+</tr>
+<tr>
+<td>
+Mardi
+</td>
+<td>
+Montpellier
+</td>
+<td>
+PRES D ARENE
+</td>
+<td align="right">
+     10348
+</td>
+</tr>
+<tr>
+<td>
+Mardi
+</td>
+<td>
+Montpellier
+</td>
+<td>
+PORT MARIANNE
+</td>
+<td align="right">
+     11232
+</td>
+</tr>
+<tr>
+<td>
+Mardi
+</td>
+<td>
+Montpellier
+</td>
+<td>
+CROIX D ARGENT
+</td>
+<td align="right">
+     11232
+</td>
+</tr>
+<tr>
+<td>
+Mardi
+</td>
+<td>
+Montpellier
+</td>
+<td>
+HOPITAUX-FACULTES
+</td>
+<td align="right">
+     12324
+</td>
+</tr>
+<tr>
+<td>
+Mardi
+</td>
+<td>
+Montpellier
+</td>
+<td>
+MONTPELLIER CENTRE
+</td>
+<td align="right">
+     12012
+</td>
+</tr>
+<tr>
+<td>
+Samedi
+</td>
+<td>
+&nbsp;
+</td>
+<td>
+&nbsp;
+</td>
+<td align="right">
+     77622
+</td>
+</tr>
+<tr>
+<td>
+Samedi
+</td>
+<td>
+&nbsp;
+</td>
+<td>
+MOSSON
+</td>
+<td align="right">
+     10608
+</td>
+</tr>
+<tr>
+<td>
+Samedi
+</td>
+<td>
+&nbsp;
+</td>
+<td>
+LES CEVENNES
+</td>
+<td align="right">
+     10965
+</td>
+</tr>
+<tr>
+<td>
+Samedi
+</td>
+<td>
+&nbsp;
+</td>
+<td>
+PRES D ARENE
+</td>
+<td align="right">
+     10149
+</td>
+</tr>
+<tr>
+<td>
+Samedi
+</td>
+<td>
+&nbsp;
+</td>
+<td>
+PORT MARIANNE
+</td>
+<td align="right">
+     11016
+</td>
+</tr>
+<tr>
+<td>
+Samedi
+</td>
+<td>
+&nbsp;
+</td>
+<td>
+CROIX D ARGENT
+</td>
+<td align="right">
+     11016
+</td>
+</tr>
+<tr>
+<td>
+Samedi
+</td>
+<td>
+&nbsp;
+</td>
+<td>
+HOPITAUX-FACULTES
+</td>
+<td align="right">
+     12087
+</td>
+</tr>
+<tr>
+<td>
+Samedi
+</td>
+<td>
+&nbsp;
+</td>
+<td>
+MONTPELLIER CENTRE
+</td>
+<td align="right">
+     11781
+</td>
+</tr>
+<tr>
+<td>
+Samedi
+</td>
+<td>
+Montpellier
+</td>
+<td>
+&nbsp;
+</td>
+<td align="right">
+     77622
+</td>
+</tr>
+<tr>
+<td>
+Samedi
+</td>
+<td>
+Montpellier
+</td>
+<td>
+MOSSON
+</td>
+<td align="right">
+     10608
+</td>
+</tr>
+<tr>
+<td>
+Samedi
+</td>
+<td>
+Montpellier
+</td>
+<td>
+LES CEVENNES
+</td>
+<td align="right">
+     10965
+</td>
+</tr>
+<tr>
+<td>
+Samedi
+</td>
+<td>
+Montpellier
+</td>
+<td>
+PRES D ARENE
+</td>
+<td align="right">
+     10149
+</td>
+</tr>
+<tr>
+<td>
+Samedi
+</td>
+<td>
+Montpellier
+</td>
+<td>
+PORT MARIANNE
+</td>
+<td align="right">
+     11016
+</td>
+</tr>
+<tr>
+<td>
+Samedi
+</td>
+<td>
+Montpellier
+</td>
+<td>
+CROIX D ARGENT
+</td>
+<td align="right">
+     11016
+</td>
+</tr>
+<tr>
+<td>
+Samedi
+</td>
+<td>
+Montpellier
+</td>
+<td>
+HOPITAUX-FACULTES
+</td>
+<td align="right">
+     12087
+</td>
+</tr>
+<tr>
+<td>
+Samedi
+</td>
+<td>
+Montpellier
+</td>
+<td>
+MONTPELLIER CENTRE
+</td>
+<td align="right">
+     11781
+</td>
+</tr>
+<tr>
+<td>
+Dimanche
+</td>
+<td>
+&nbsp;
+</td>
+<td>
+&nbsp;
+</td>
+<td align="right">
+     77622
+</td>
+</tr>
+<tr>
+<td>
+Dimanche
+</td>
+<td>
+&nbsp;
+</td>
+<td>
+MOSSON
+</td>
+<td align="right">
+     10608
+</td>
+</tr>
+<tr>
+<td>
+Dimanche
+</td>
+<td>
+&nbsp;
+</td>
+<td>
+LES CEVENNES
+</td>
+<td align="right">
+     10965
+</td>
+</tr>
+<tr>
+<td>
+Dimanche
+</td>
+<td>
+&nbsp;
+</td>
+<td>
+PRES D ARENE
+</td>
+<td align="right">
+     10149
+</td>
+</tr>
+<tr>
+<td>
+Dimanche
+</td>
+<td>
+&nbsp;
+</td>
+<td>
+PORT MARIANNE
+</td>
+<td align="right">
+     11016
+</td>
+</tr>
+<tr>
+<td>
+Dimanche
+</td>
+<td>
+&nbsp;
+</td>
+<td>
+CROIX D ARGENT
+</td>
+<td align="right">
+     11016
+</td>
+</tr>
+<tr>
+<td>
+Dimanche
+</td>
+<td>
+&nbsp;
+</td>
+<td>
+HOPITAUX-FACULTES
+</td>
+<td align="right">
+     12087
+</td>
+</tr>
+<tr>
+<td>
+Dimanche
+</td>
+<td>
+&nbsp;
+</td>
+<td>
+MONTPELLIER CENTRE
+</td>
+<td align="right">
+     11781
+</td>
+</tr>
+<tr>
+<td>
+Dimanche
+</td>
+<td>
+Montpellier
+</td>
+<td>
+&nbsp;
+</td>
+<td align="right">
+     77622
+</td>
+</tr>
+<tr>
+<td>
+Dimanche
+</td>
+<td>
+Montpellier
+</td>
+<td>
+MOSSON
+</td>
+<td align="right">
+     10608
+</td>
+</tr>
+<tr>
+<td>
+Dimanche
+</td>
+<td>
+Montpellier
+</td>
+<td>
+LES CEVENNES
+</td>
+<td align="right">
+     10965
+</td>
+</tr>
+<tr>
+<td>
+Dimanche
+</td>
+<td>
+Montpellier
+</td>
+<td>
+PRES D ARENE
+</td>
+<td align="right">
+     10149
+</td>
+</tr>
+<tr>
+<td>
+Dimanche
+</td>
+<td>
+Montpellier
+</td>
+<td>
+PORT MARIANNE
+</td>
+<td align="right">
+     11016
+</td>
+</tr>
+<tr>
+<td>
+Dimanche
+</td>
+<td>
+Montpellier
+</td>
+<td>
+CROIX D ARGENT
+</td>
+<td align="right">
+     11016
+</td>
+</tr>
+<tr>
+<td>
+Dimanche
+</td>
+<td>
+Montpellier
+</td>
+<td>
+HOPITAUX-FACULTES
+</td>
+<td align="right">
+     12087
+</td>
+</tr>
+<tr>
+<td>
+Dimanche
+</td>
+<td>
+Montpellier
+</td>
+<td>
+MONTPELLIER CENTRE
+</td>
+<td align="right">
+     11781
+</td>
+</tr>
+<tr>
+<td>
+Mercredi
+</td>
+<td>
+&nbsp;
+</td>
+<td>
+&nbsp;
+</td>
+<td align="right">
+     79144
+</td>
+</tr>
+<tr>
+<td>
+Mercredi
+</td>
+<td>
+&nbsp;
+</td>
+<td>
+MOSSON
+</td>
+<td align="right">
+     10816
+</td>
+</tr>
+<tr>
+<td>
+Mercredi
+</td>
+<td>
+&nbsp;
+</td>
+<td>
+LES CEVENNES
+</td>
+<td align="right">
+     11180
+</td>
+</tr>
+<tr>
+<td>
+Mercredi
+</td>
+<td>
+&nbsp;
+</td>
+<td>
+PRES D ARENE
+</td>
+<td align="right">
+     10348
+</td>
+</tr>
+<tr>
+<td>
+Mercredi
+</td>
+<td>
+&nbsp;
+</td>
+<td>
+PORT MARIANNE
+</td>
+<td align="right">
+     11232
+</td>
+</tr>
+<tr>
+<td>
+Mercredi
+</td>
+<td>
+&nbsp;
+</td>
+<td>
+CROIX D ARGENT
+</td>
+<td align="right">
+     11232
+</td>
+</tr>
+<tr>
+<td>
+Mercredi
+</td>
+<td>
+&nbsp;
+</td>
+<td>
+HOPITAUX-FACULTES
+</td>
+<td align="right">
+     12324
+</td>
+</tr>
+<tr>
+<td>
+Mercredi
+</td>
+<td>
+&nbsp;
+</td>
+<td>
+MONTPELLIER CENTRE
+</td>
+<td align="right">
+     12012
+</td>
+</tr>
+<tr>
+<td>
+Mercredi
+</td>
+<td>
+Montpellier
+</td>
+<td>
+&nbsp;
+</td>
+<td align="right">
+     79144
+</td>
+</tr>
+<tr>
+<td>
+Mercredi
+</td>
+<td>
+Montpellier
+</td>
+<td>
+MOSSON
+</td>
+<td align="right">
+     10816
+</td>
+</tr>
+<tr>
+<td>
+Mercredi
+</td>
+<td>
+Montpellier
+</td>
+<td>
+LES CEVENNES
+</td>
+<td align="right">
+     11180
+</td>
+</tr>
+<tr>
+<td>
+Mercredi
+</td>
+<td>
+Montpellier
+</td>
+<td>
+PRES D ARENE
+</td>
+<td align="right">
+     10348
+</td>
+</tr>
+<tr>
+<td>
+Mercredi
+</td>
+<td>
+Montpellier
+</td>
+<td>
+PORT MARIANNE
+</td>
+<td align="right">
+     11232
+</td>
+</tr>
+<tr>
+<td>
+Mercredi
+</td>
+<td>
+Montpellier
+</td>
+<td>
+CROIX D ARGENT
+</td>
+<td align="right">
+     11232
+</td>
+</tr>
+<tr>
+<td>
+Mercredi
+</td>
+<td>
+Montpellier
+</td>
+<td>
+HOPITAUX-FACULTES
+</td>
+<td align="right">
+     12324
+</td>
+</tr>
+<tr>
+<td>
+Mercredi
+</td>
+<td>
+Montpellier
+</td>
+<td>
+MONTPELLIER CENTRE
+</td>
+<td align="right">
+     12012
+</td>
+</tr>
+<tr>
+<td>
+Vendredi
+</td>
+<td>
+&nbsp;
+</td>
+<td>
+&nbsp;
+</td>
+<td align="right">
+     77622
+</td>
+</tr>
+<tr>
+<td>
+Vendredi
+</td>
+<td>
+&nbsp;
+</td>
+<td>
+MOSSON
+</td>
+<td align="right">
+     10608
+</td>
+</tr>
+<tr>
+<td>
+Vendredi
+</td>
+<td>
+&nbsp;
+</td>
+<td>
+LES CEVENNES
+</td>
+<td align="right">
+     10965
+</td>
+</tr>
+<tr>
+<td>
+Vendredi
+</td>
+<td>
+&nbsp;
+</td>
+<td>
+PRES D ARENE
+</td>
+<td align="right">
+     10149
+</td>
+</tr>
+<tr>
+<td>
+Vendredi
+</td>
+<td>
+&nbsp;
+</td>
+<td>
+PORT MARIANNE
+</td>
+<td align="right">
+     11016
+</td>
+</tr>
+<tr>
+<td>
+Vendredi
+</td>
+<td>
+&nbsp;
+</td>
+<td>
+CROIX D ARGENT
+</td>
+<td align="right">
+     11016
+</td>
+</tr>
+<tr>
+<td>
+Vendredi
+</td>
+<td>
+&nbsp;
+</td>
+<td>
+HOPITAUX-FACULTES
+</td>
+<td align="right">
+     12087
+</td>
+</tr>
+<tr>
+<td>
+Vendredi
+</td>
+<td>
+&nbsp;
+</td>
+<td>
+MONTPELLIER CENTRE
+</td>
+<td align="right">
+     11781
+</td>
+</tr>
+<tr>
+<td>
+Vendredi
+</td>
+<td>
+Montpellier
+</td>
+<td>
+&nbsp;
+</td>
+<td align="right">
+     77622
+</td>
+</tr>
+<tr>
+<td>
+Vendredi
+</td>
+<td>
+Montpellier
+</td>
+<td>
+MOSSON
+</td>
+<td align="right">
+     10608
+</td>
+</tr>
+<tr>
+<td>
+Vendredi
+</td>
+<td>
+Montpellier
+</td>
+<td>
+LES CEVENNES
+</td>
+<td align="right">
+     10965
+</td>
+</tr>
+<tr>
+<td>
+Vendredi
+</td>
+<td>
+Montpellier
+</td>
+<td>
+PRES D ARENE
+</td>
+<td align="right">
+     10149
+</td>
+</tr>
+<tr>
+<td>
+Vendredi
+</td>
+<td>
+Montpellier
+</td>
+<td>
+PORT MARIANNE
+</td>
+<td align="right">
+     11016
+</td>
+</tr>
+<tr>
+<td>
+Vendredi
+</td>
+<td>
+Montpellier
+</td>
+<td>
+CROIX D ARGENT
+</td>
+<td align="right">
+     11016
+</td>
+</tr>
+<tr>
+<td>
+Vendredi
+</td>
+<td>
+Montpellier
+</td>
+<td>
+HOPITAUX-FACULTES
+</td>
+<td align="right">
+     12087
+</td>
+</tr>
+<tr>
+<td>
+Vendredi
+</td>
+<td>
+Montpellier
+</td>
+<td>
+MONTPELLIER CENTRE
+</td>
+<td align="right">
+     11781
+</td>
+</tr>
+</table>
+<p>
+
+128 lignes selectionnees.<br>
+<br>
+
+
+SQL&gt; SPOOL OFF;exit
+<br>
+</body>
+</html>

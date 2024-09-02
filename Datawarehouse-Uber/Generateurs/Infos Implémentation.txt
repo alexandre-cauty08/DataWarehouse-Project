@@ -1,0 +1,25 @@
+1,5 MILLION
+
+Le nombre d'utilisateurs des services de VTC en France. 
+70% d'entre eux vivent en région parisienne, le reste dans les grandes agglomérations (et plutôt dans la ville-centre qu'en banlieue).
+
+ 
+
+La moitié des clients utilisent les VTC pour leurs déplacements privés, 46% pour les trajets professionnels, 4% pour les deux.
+
+ 
+
+4
+
+C'est le nombre de jours par mois durant lesquels les clients font appel à des VTC, en moyenne. 
+73 % des usagers utilisent un service de VTC au moins une fois par mois et 35 % au moins une fois par semaine. 
+Ils utilisent les taxis en moyenne 0,5 jour par mois seulement...
+
+
+21 MINUTES
+
+C'est la durée moyenne d'un trajet en VTC. Très proche de la moyenne des courses en taxi (22 minutes). 
+Ils sont plutôt utilisés pour de déplacements de proximité, 
+dans la commune de résidence des utilisateurs : la distance moyenne est de 9 km, 
+contre 10 km pour le taxi. Plus étonnant : le coût moyen est de 20 euros, contre 22 euros pour le taxi. 
+L'argument du prix pour privilégier le VTC n'est donc pas forcément justifié.
